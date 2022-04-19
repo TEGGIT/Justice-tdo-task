@@ -11,7 +11,9 @@ function buttonAdd() {
     todo: inputTodo.value
   };
   newTodo.push(todo)
-  addNewTodo()
+  if (inputTodo.value){
+    addNewTodo()
+  }
   localStorage.setItem('TODO', JSON.stringify(newTodo))
 }
 
@@ -19,6 +21,7 @@ function buttonAdd() {
 
 
 function addNewTodo() {
+
   let todo = ""
   newTodo.reverse().forEach(function (element,){
     todo +=`  <div class="todo-item">   
@@ -36,8 +39,8 @@ function addNewTodo() {
         </div>
     </div>`
 
-    todoList.innerHTML = todo
 
+        todoList.innerHTML = todo
   })
 }
 
