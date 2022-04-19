@@ -1,24 +1,30 @@
 let inputTodo = document.getElementById('input')
 let todoList = document.getElementById('todoList')
+// создаём пустой массив
 let newTodo =[]
+// Берём данные из Localstorage при загрузке страницы
 if (localStorage.getItem('TODO')){
   newTodo =  JSON.parse(localStorage.getItem('TODO'));
   addNewTodo()
 }
+// Объявляем функцию для добавления задач
 function buttonAdd() {
+  // Создаём объект и записываем в него значение поля input
   let todo = {
     todo: inputTodo.value
   };
+  // Добавляем наш объект в массив который мы создали ранее
   newTodo.push(todo)
   if (inputTodo.value){
     addNewTodo()
   }
+  // Записываем данные из todolist в localStorage
   localStorage.setItem('TODO', JSON.stringify(newTodo))
 }
 
 
 
-
+// Создаём функцию для отрисовки задач на странице
 function addNewTodo() {
 
   let todo = ""
