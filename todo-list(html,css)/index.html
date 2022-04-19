@@ -57,9 +57,10 @@
         </div>
         <div class="main__header__add-field">
             <input class="add-field__text"
+                   id="input"
                    type="text"
-                   placeholder="Введите текст">
-            <div class="add-field__btn">
+                   placeholder="Введите текст" >
+            <div class="add-field__btn" id="buttonAdd" onclick="buttonAdd()">
                 <span class="add-field__item">Добавить</span>
                 <img class="add-field__item"
                      src="./assets/icons/plus-icon.svg"
@@ -67,133 +68,8 @@
             </div>
         </div>
     </div>
-    <div class="todo-list">
-        <div class="todo-item">
-            <span>Выбрать хостинг для сайта</span>
-            <div class="todo-item__icons">
-                <img class="todo-item__icon"
-                     src="./assets/icons/trash-icon.svg"
-                     alt="trash-icon">
-                <img class="todo-item__icon"
-                     src="./assets/icons/edit-icon.svg"
-                     alt="edit-icon">
-                <img class="todo-item__icon-mobile"
-                     src="./assets/icons/mobile-ellipse.svg"
-                     alt="mobile-ellipse">
-            </div>
-        </div>
-        <div class="todo-item">
-            <span>Записаться к стоматологу</span>
-            <div class="todo-item__icons">
-                <img class="todo-item__icon"
-                     src="./assets/icons/trash-icon.svg"
-                     alt="trash-icon">
-                <img class="todo-item__icon"
-                     src="./assets/icons/edit-icon.svg"
-                     alt="edit-icon">
-                <img class="todo-item__icon-mobile"
-                     src="./assets/icons/mobile-ellipse.svg"
-                     alt="mobile-ellipse">
-            </div>
-        </div>
-        <div class="todo-item">
-            <span>Записаться на курсы по Английскому</span>
-            <div class="todo-item__icons">
-                <img class="todo-item__icon"
-                     src="./assets/icons/trash-icon.svg"
-                     alt="trash-icon">
-                <img class="todo-item__icon"
-                     src="./assets/icons/edit-icon.svg"
-                     alt="edit-icon">
-                <img class="todo-item__icon-mobile"
-                     src="./assets/icons/mobile-ellipse.svg"
-                     alt="mobile-ellipse">
-            </div>
-        </div>
-        <div class="todo-item">
-            <span>Навести порядок на кухне</span>
-            <div class="todo-item__icons">
-                <img class="todo-item__icon"
-                     src="./assets/icons/trash-icon.svg"
-                     alt="trash-icon">
-                <img class="todo-item__icon"
-                     src="./assets/icons/edit-icon.svg"
-                     alt="edit-icon">
-                <img class="todo-item__icon-mobile"
-                     src="./assets/icons/mobile-ellipse.svg"
-                     alt="mobile-ellipse">
-            </div>
-        </div>
-        <div class="todo-item">
-            <span>Подготовить одежду к поездке</span>
-            <div class="todo-item__icons">
-                <img class="todo-item__icon"
-                     src="./assets/icons/trash-icon.svg"
-                     alt="trash-icon">
-                <img class="todo-item__icon"
-                     src="./assets/icons/edit-icon.svg"
-                     alt="edit-icon">
-                <img class="todo-item__icon-mobile"
-                     src="./assets/icons/mobile-ellipse.svg"
-                     alt="mobile-ellipse">
-            </div>
-        </div>
-        <div class="todo-item">
-            <span>Подготовиться к выступлению в понедельник</span>
-            <div class="todo-item__icons">
-                <img class="todo-item__icon"
-                     src="./assets/icons/trash-icon.svg"
-                     alt="trash-icon">
-                <img class="todo-item__icon"
-                     src="./assets/icons/edit-icon.svg"
-                     alt="edit-icon">
-                <img class="todo-item__icon-mobile"
-                     src="./assets/icons/mobile-ellipse.svg"
-                     alt="mobile-ellipse">
-            </div>
-        </div>
-        <div class="todo-item">
-            <span>Помыть машину</span>
-            <div class="todo-item__icons">
-                <img class="todo-item__icon"
-                     src="./assets/icons/trash-icon.svg"
-                     alt="trash-icon">
-                <img class="todo-item__icon"
-                     src="./assets/icons/edit-icon.svg"
-                     alt="edit-icon">
-                <img class="todo-item__icon-mobile"
-                     src="./assets/icons/mobile-ellipse.svg"
-                     alt="mobile-ellipse">
-            </div>
-        </div>
-        <div class="todo-item">
-            <span>Купить продукты</span>
-            <div class="todo-item__icons">
-                <img class="todo-item__icon"
-                     src="./assets/icons/trash-icon.svg"
-                     alt="trash-icon">
-                <img class="todo-item__icon"
-                     src="./assets/icons/edit-icon.svg"
-                     alt="edit-icon">
-                <img class="todo-item__icon-mobile"
-                     src="./assets/icons/mobile-ellipse.svg"
-                     alt="mobile-ellipse">
-            </div>
-        </div>
-        <div class="todo-item">
-            <span>Отдать проект на проверку</span>
-            <div class="todo-item__icons">
-                <img class="todo-item__icon"
-                     src="./assets/icons/trash-icon.svg"
-                     alt="trash-icon">
-                <img class="todo-item__icon"
-                     src="./assets/icons/edit-icon.svg"
-                     alt="edit-icon">
-                <img class="todo-item__icon-mobile"
-                     src="./assets/icons/mobile-ellipse.svg"
-                     alt="mobile-ellipse">
-            </div>
-        </div>
+    <div class="todo-list" id="todoList" >
+
     </div>
 </main>
 <!--MAIN-->
@@ -222,5 +98,6 @@
     </div>
 </footer>
 <!--FOOTER-->
+<script src="script.js"></script>
 </body>
 </html>
