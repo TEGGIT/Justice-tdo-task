@@ -5,7 +5,6 @@ if (localStorage.getItem('TODO')){
   newTodo =  JSON.parse(localStorage.getItem('TODO'));
   addNewTodo()
 }
-
 function buttonAdd() {
   let todo = {
     todo: inputTodo.value
