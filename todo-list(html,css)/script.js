@@ -1,4 +1,4 @@
-const inputTodo = document.getElementById('input')
+const inputTodo = document.getElementById("input")
 const todoList = document.getElementById('todoList')
 addNewTodo()
 function buttonAdd() {
